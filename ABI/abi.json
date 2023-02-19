@@ -1,0 +1,540 @@
+[
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "op_type",
+                "type": "uint256"
+            },
+            {
+                "name": "p_hash",
+                "type": "bytes32"
+            },
+            {
+                "name": "to",
+                "type": "address"
+            }
+        ],
+        "name": "InitiateVerify",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "product_hash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "getPartDetails",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            },
+            {
+                "name": "",
+                "type": "string"
+            },
+            {
+                "name": "",
+                "type": "string"
+            },
+            {
+                "name": "",
+                "type": "string"
+            },
+            {
+                "name": "",
+                "type": "string"
+            },
+            {
+                "name": "",
+                "type": "string"
+            },
+            {
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "product_hash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "getParts",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bytes32[]"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "product_hash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "getPart",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "name": "manufacturer",
+                        "type": "address"
+                    },
+                    {
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "verificationtype",
+                        "type": "string"
+                    },
+                    {
+                        "name": "field1",
+                        "type": "string"
+                    },
+                    {
+                        "name": "field2",
+                        "type": "string"
+                    },
+                    {
+                        "name": "field3",
+                        "type": "string"
+                    },
+                    {
+                        "name": "ipfs_hash",
+                        "type": "string"
+                    },
+                    {
+                        "name": "scancnt",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "candidateaddress",
+                        "type": "address"
+                    },
+                    {
+                        "name": "itemState",
+                        "type": "uint8"
+                    },
+                    {
+                        "name": "verifiedaddress",
+                        "type": "address"
+                    }
+                ],
+                "name": "",
+                "type": "tuple"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "name": "products",
+        "outputs": [
+            {
+                "name": "manufacturer",
+                "type": "address"
+            },
+            {
+                "name": "experience_type",
+                "type": "string"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "name": "currentPartOwner",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "experience_type",
+                "type": "string"
+            },
+            {
+                "name": "part_hash",
+                "type": "bytes32"
+            },
+            {
+                "name": "product_hash",
+                "type": "bytes32"
+            },
+            {
+                "name": "expkey",
+                "type": "address"
+            }
+        ],
+        "name": "buildExperience",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "op_type",
+                "type": "uint256"
+            },
+            {
+                "name": "p_hash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "addOwnership",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "components": [
+                    {
+                        "name": "manufacturer",
+                        "type": "address"
+                    },
+                    {
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "verificationtype",
+                        "type": "string"
+                    },
+                    {
+                        "name": "field1",
+                        "type": "string"
+                    },
+                    {
+                        "name": "field2",
+                        "type": "string"
+                    },
+                    {
+                        "name": "field3",
+                        "type": "string"
+                    },
+                    {
+                        "name": "ipfs_hash",
+                        "type": "string"
+                    },
+                    {
+                        "name": "scancnt",
+                        "type": "uint256"
+                    },
+                    {
+                        "name": "candidateaddress",
+                        "type": "address"
+                    },
+                    {
+                        "name": "itemState",
+                        "type": "uint8"
+                    },
+                    {
+                        "name": "verifiedaddress",
+                        "type": "address"
+                    }
+                ],
+                "name": "pt",
+                "type": "tuple"
+            }
+        ],
+        "name": "buildPart",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "name": "parts",
+        "outputs": [
+            {
+                "name": "manufacturer",
+                "type": "address"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "verificationtype",
+                "type": "string"
+            },
+            {
+                "name": "field1",
+                "type": "string"
+            },
+            {
+                "name": "field2",
+                "type": "string"
+            },
+            {
+                "name": "field3",
+                "type": "string"
+            },
+            {
+                "name": "ipfs_hash",
+                "type": "string"
+            },
+            {
+                "name": "scancnt",
+                "type": "uint256"
+            },
+            {
+                "name": "candidateaddress",
+                "type": "address"
+            },
+            {
+                "name": "itemState",
+                "type": "uint8"
+            },
+            {
+                "name": "verifiedaddress",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "op_type",
+                "type": "uint256"
+            },
+            {
+                "name": "p_hash",
+                "type": "bytes32"
+            },
+            {
+                "name": "to",
+                "type": "address"
+            }
+        ],
+        "name": "changeOwnership",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "op_type",
+                "type": "uint256"
+            },
+            {
+                "name": "p_hash",
+                "type": "bytes32"
+            },
+            {
+                "name": "to",
+                "type": "address"
+            }
+        ],
+        "name": "Verified",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "name": "currentProductOwner",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "p",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "name": "account",
+                "type": "address"
+            }
+        ],
+        "name": "TransferPartOwnership",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "p",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "name": "account",
+                "type": "address"
+            }
+        ],
+        "name": "TransferProductOwnership",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "p",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "name": "account",
+                "type": "address"
+            }
+        ],
+        "name": "UserInitiateVerify",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "p",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "name": "account",
+                "type": "address"
+            }
+        ],
+        "name": "DataVerified",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "p",
+                "type": "bytes32"
+            },
+            {
+                "indexed": true,
+                "name": "account",
+                "type": "address"
+            }
+        ],
+        "name": "DataRejected",
+        "type": "event"
+    }
+]
